@@ -1,4 +1,4 @@
-package sample.deeplinking.deferred.util
+package sample.deeplinking.deferred.model
 
 import java.util.*
 

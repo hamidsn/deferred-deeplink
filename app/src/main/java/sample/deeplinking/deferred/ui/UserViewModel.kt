@@ -2,8 +2,7 @@ package sample.deeplinking.deferred.ui
 
 import android.databinding.BaseObservable
 import android.databinding.Bindable
-import android.view.View
-import sample.deeplinking.deferred.util.User
+import sample.deeplinking.deferred.model.User
 import java.util.*
 import sample.deeplinking.deferred.deferreddeeplink.BR
 

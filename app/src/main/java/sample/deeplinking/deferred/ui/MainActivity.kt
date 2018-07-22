@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity
 import sample.deeplinking.deferred.deferreddeeplink.BR
 import sample.deeplinking.deferred.deferreddeeplink.R
 import sample.deeplinking.deferred.receiver.InstallReferrerReceiver.Companion.DEFERRED_DEEPLINK
-import sample.deeplinking.deferred.util.User
+import sample.deeplinking.deferred.model.User
 import sample.deeplinking.deferred.util.UserUtil
 import java.util.*
 

@@ -3,6 +3,7 @@ package sample.deeplinking.deferred.util
 import android.content.Context
 import android.text.TextUtils
 import sample.deeplinking.deferred.deferreddeeplink.R
+import sample.deeplinking.deferred.model.User
 import sample.deeplinking.deferred.model.UserInfoModel
 import java.util.*
 
