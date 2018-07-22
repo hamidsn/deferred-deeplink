@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Deferred Deeplink</string>
+
+    <!-- color -->
+    <string name="color_black">Black</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_default">All colors</string>
+    <string name="color_green">Green</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_red">Red</string>
+    <string name="color_yellow">Yellow</string>
+
+
+    <!-- urls -->
+    <string name="url_black">https://i.gifer.com/1e.gif</string>
+    <string name="url_blue">https://media.giphy.com/media/otkHAwEvgKFYA/giphy.gif</string>
+    <string name="url_default">https://media3.giphy.com/media/vPmJKooQbFTOw/giphy.gif</string>
+    <string name="url_green">https://mir-s3-cdn-cf.behance.net/project_modules/disp/81191554933123.596f89a9597ff.gif</string>
+    <string name="url_orange">https://media.npr.org/assets/img/2017/08/31/orange-concentrate.gif</string>
+    <string name="url_red">http://dl.glitter-graphics.com/pub/3342/3342203pbtxzzjrg7.gif</string>
+    <string name="url_yellow">https://78.media.tumblr.com/1cbfdb51e0eb17b88cef3f1da748c85c/tumblr_nil81dPl9L1txeruoo1_500.gif</string>
+
+</resources>
