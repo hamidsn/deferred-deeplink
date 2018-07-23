@@ -1,19 +1,22 @@
 package sample.deeplinking.deferred.model
 
-import java.util.*
+import java.util.Observable
+
+private const val IMAGEURL = "imageUrl"
+private const val TAGLINE = "tagline"
 
 class User : Observable() {
 
     var imageUrl: String = ""
         set(value) {
             field = value
-            setChangedAndNotify("imageUrl")
+            setChangedAndNotify(IMAGEURL)
         }
 
     var tagline: String = ""
         set(value) {
             field = value
-            setChangedAndNotify("tagline")
+            setChangedAndNotify(TAGLINE)
         }
 
     private fun setChangedAndNotify(field: Any) {

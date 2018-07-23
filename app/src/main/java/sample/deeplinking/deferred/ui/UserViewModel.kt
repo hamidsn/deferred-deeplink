@@ -7,6 +7,8 @@ import java.util.*
 import sample.deeplinking.deferred.deferreddeeplink.BR
 
 class UserViewModel(private val user: User) : Observer, BaseObservable() {
+    private var IMAGEURL = "imageUrl"
+    private var TAGLINE = "tagline"
 
     /// Register itself as the observer of Model
     init {
@@ -16,9 +18,9 @@ class UserViewModel(private val user: User) : Observer, BaseObservable() {
     /// Notify the UI when change event emitting from Model is received.
     override fun update(p0: Observable?, p1: Any?) {
         if (p1 is String) {
-            if (p1 == "imageUrl") {
+            if (p1 == IMAGEURL) {
                 notifyPropertyChanged(BR.imageUrl)
-            } else if (p1 == "tagLine") {
+            } else if (p1 == TAGLINE) {
                 notifyPropertyChanged(BR.tagline)
             }
         }
@@ -31,7 +33,7 @@ class UserViewModel(private val user: User) : Observer, BaseObservable() {
 
     val tagline: String
         @Bindable get() {
-            return "Tagline: " + user.tagline
+            return "$TAGLINE + :  ${user.tagline}"
         }
 
 

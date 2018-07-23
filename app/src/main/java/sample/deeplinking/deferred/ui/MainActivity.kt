@@ -24,11 +24,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun landing() {
         val action = intent.action
-        var user: User = UserUtil.setupUser(this)
+        var user: User = UserUtil.setupUser(this, null)
 
         if (Intent.ACTION_MAIN == action) run {
             // user launches the app from app icon or widget
-            // do your normal logic here
+            // do your normal logic here based on your requirements
 
         } else if (Intent.ACTION_VIEW == action) {
             // deferred deep link is running the app

@@ -33,7 +33,7 @@ class InstallReferrerReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         if (TextUtils.equals(intent.action, RECEIVER_ACTION)) {
             val referrer = intent.getStringExtra(REFERRER)
-            if (!TextUtils.isEmpty(referrer)) {
+            if (!referrer.isNullOrEmpty()) {
                 try {
                     val decodedReferrer = URLDecoder.decode(referrer, StandardCharsets.UTF_8.name())
                     if (!TextUtils.isEmpty(decodedReferrer)) {
@@ -41,7 +41,7 @@ class InstallReferrerReceiver : BroadcastReceiver() {
                             val target = Intent(context, MainActivity::class.java)
                             target.action = Intent.ACTION_VIEW
                             target.putExtra(DEFERRED_DEEPLINK, decodedReferrer)
-                            Log.d(TAG, String.format("Deferred deep-link referrer: %s", decodedReferrer))
+                            Log.d(TAG, "Deferred deep-link referrer: $decodedReferrer")
                             target.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             context.startActivity(target)
                         }
@@ -58,6 +58,6 @@ class InstallReferrerReceiver : BroadcastReceiver() {
     }
 
     companion object {
-        val DEFERRED_DEEPLINK = "deferred_deeplink"
+        const val DEFERRED_DEEPLINK = "deferred_deeplink"
     }
 }
